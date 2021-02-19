@@ -304,18 +304,18 @@ $page->addHtml('
             {
                 if ($userId !== $currUsrId && $gSettingsManager->getBool('enable_pm_module'))
                 {
-                    $form->addStaticControl('username', $gL10n->get('SYS_USERNAME'),
+                    $form->addStaticControl('roadname', $gL10n->get('SYS_USERNAME'),
                         '<a class="admidio-icon-link" href="'.SecurityUtils::encodeUrl(ADMIDIO_URL.FOLDER_MODULES.'/messages/messages_write.php', array('msg_type' => 'PM', 'usr_id' => $userId)).'" title="' . $gL10n->get('SYS_WRITE_PM') . '">'.
                             '<i class="fas fa-comment-alt"></i>'.$user->getValue('usr_login_name').'</a>');
                 }
                 else
                 {
-                    $form->addStaticControl('username', $gL10n->get('SYS_USERNAME'), $user->getValue('usr_login_name'));
+                    $form->addStaticControl('roadname', $gL10n->get('SYS_USERNAME'), $user->getValue('usr_login_name'));
                 }
             }
             else
             {
-                $form->addStaticControl('username', $gL10n->get('SYS_USERNAME'), $gL10n->get('SYS_NOT_REGISTERED'));
+                $form->addStaticControl('roadname', $gL10n->get('SYS_USERNAME'), $gL10n->get('SYS_NOT_REGISTERED'));
             }
 
             $bAddressOutput = false;    // Merker, ob die Adresse schon angezeigt wurde
@@ -950,7 +950,8 @@ if($gSettingsManager->getBool('members_enable_user_relations'))
             $page->addHtml('<li id="row_ure_'.(int) $relation->getValue('ure_id').'" class="list-group-item">');
             $page->addHtml('<div>');
             $page->addHtml('<span>'.$relationName.' - <a href="'.SecurityUtils::encodeUrl(ADMIDIO_URL.FOLDER_MODULES.'/profile/profile.php', array('user_id' => (int) $otherUser->getValue('usr_id'))).
-                           '">'.$otherUser->getValue('FIRST_NAME') . ' ' . $otherUser->getValue('LAST_NAME').'</a> ' . $editUserIcon . '<span>');
+                           '">'.$otherUser->getValue('FIRST_NAME') . ' ' . $otherUser->getValue('LAST_NAME') .
+                           ' (' . $otherUser->getValue('usr_login_name') . ')' .'</a> ' . $editUserIcon . '<span>');
             $page->addHtml('<span class="float-right text-right">');
 
             if($gCurrentUser->editUsers())

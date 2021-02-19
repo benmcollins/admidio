@@ -107,8 +107,8 @@ if($gCurrentUser->editUsers())
                        ORDER BY last_name.usd_value, first_name.usd_value, usr_id';
     $sqlData['params'] = array_merge(
         array(
-            $gProfileFields->getProperty('LAST_NAME', 'usf_id'),
             $gProfileFields->getProperty('FIRST_NAME', 'usf_id'),
+            $gProfileFields->getProperty('LAST_NAME', 'usf_id'),
             $user->getValue('usr_id')
         ),
         $gCurrentUser->getAllVisibleRoles(),
@@ -153,8 +153,8 @@ else
                             AND usr_valid  = 1
                        ORDER BY last_name.usd_value, first_name.usd_value, usr_id';
     $sqlData['params'] = array(
-        $gProfileFields->getProperty('LAST_NAME', 'usf_id'),
         $gProfileFields->getProperty('FIRST_NAME', 'usf_id'),
+        $gProfileFields->getProperty('LAST_NAME', 'usf_id'),
         $user->getValue('usr_id'),
         $gCurrentUser->getValue('usr_id'),
         DATE_NOW,

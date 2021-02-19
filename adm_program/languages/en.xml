@@ -227,9 +227,9 @@
   <string name="INS_BOYFRIEND">Friend</string>
   <string name="INS_BROTHER">Brother</string>
   <string name="INS_CHILD">Child</string>
-  <string name="INS_COHABITANT">Partner</string>
-  <string name="INS_COHABITANT_MALE">Partner</string>
-  <string name="INS_COHABITANT_FEMALE">Partner</string>
+  <string name="INS_COHABITANT">Sponsor</string>
+  <string name="INS_COHABITANT_MALE">Patch Holder</string>
+  <string name="INS_COHABITANT_FEMALE">Rocket Girl</string>
   <string name="INS_COMPANION">Friend</string>
   <string name="INS_DAUGHTER">Daughter</string>
   <string name="INS_FATHER">Father</string>
@@ -550,12 +550,12 @@
   <string name="ORG_VARIABLE_EMAIL">Mail address of the user in regard to the mail context</string>
   <string name="ORG_VARIABLE_EMAIL_ORGANIZATION">System e-mail address of the organization</string>
   <string name="ORG_VARIABLE_FIRST_NAME">First name of the user from the respective e-mail context</string>
-  <string name="ORG_VARIABLE_LAST_NAME">Surname of the user from the respective e-mail context</string>
+  <string name="ORG_VARIABLE_LAST_NAME">Last name of the user from the respective e-mail context</string>
   <string name="ORG_VARIABLE_NAME_ORGANIZATION">Name of the organization</string>
   <string name="ORG_VARIABLE_NEW_PASSWORD">New user password</string>
   <string name="ORG_VARIABLE_SHORTNAME_ORGANIZATION">Short name of the organization</string>
   <string name="ORG_VARIABLE_URL_ORGANIZATION">Website URL of the organization</string>
-  <string name="ORG_VARIABLE_USERNAME">Username of the user from the respective e-mail context</string>
+  <string name="ORG_VARIABLE_USERNAME">Roadname of the user from the respective e-mail context</string>
   <!--Phrases only in Photomodule-->
   <string name="PHO_ALBUM">Album</string>
   <string name="PHO_ALBUM_DELETE">Delete album</string>
@@ -1016,7 +1016,7 @@
   <string name="SYS_LANGUAGE">Language</string>
   <string name="SYS_LANGUAGE_HELP_TRANSLATION">Is your language missing or do you want to translate more texts or improve existing translations? Then have a look at #VAR1#Wiki page of Admidio#VAR2# to see how you can help with the translation.</string>
   <string name="SYS_LAST_EDITED_BY">Last edited by #VAR1# on #VAR2#</string>
-  <string name="SYS_LASTNAME">Surname</string>
+  <string name="SYS_LASTNAME">Last name</string>
   <string name="SYS_LATER">Later</string>
   <string name="SYS_LEADER">Leader</string>
   <string name="SYS_LEADER_NO_ADDITIONAL_RIGHTS">Head of this role have no special rights. They will be highlighted in list views only.</string>
@@ -1335,7 +1335,7 @@
   <string name="SYS_SYSMAIL_NEW_PASSWORD">#subject# Credentials for #organization_long_name#\n#content# Hello #user_first_name#,\n\nYou receive your credentials for the website #organization_homepage#.\nUsername: #user_login_name#\nPassword: #variable1#\n\nThe password was generated automatically,\nYou should change it after logging in to #organization_homepage# in your profile.\n\nCheers,\nThe administrators</string>
   <string name="SYS_SYSMAIL_REFUSE_REGISTRATION">#subject# in registration at #organization_long_name# rejected.\n#content#Hello #user_first_name#,\n\nyour registration at #organization_homepage# was rejected.\n\nRegistrations are accepted in general by our users. If you are a member and your registration was still rejected, it may be because you were not identified as member.\nTo clarify the reasons for the rejection please contact the administrator #administrator_email# from #organization_homepage#.\n\nRegards,\nThe administrators</string>
   <string name="SYS_SYSMAIL_REGISTRATION_USER">#subject# Registration at #organization_long_name# confirmed\n#content# Hello #user_first_name#,\n\nyour registration on #organization_homepage# has been confirmed.\n\nYou can now log in to the homepage with your username #user_login_name# and your password.\n\nIf you have any questions, write an email to #administrator_email#.\n\nCheers,\nThe administrators</string>
-  <string name="SYS_SYSMAIL_REGISTRATION_ADMINISTRATOR">#subject# New registration at #organization_long_name# website\n#content# A new user has registered on #organization_homepage#.\n\nSurname: #user_last_name#\nFirst Name: #user_first_name#\nE-Mail: #user_email#\n\n\nThis message was generated automatically.</string>
+  <string name="SYS_SYSMAIL_REGISTRATION_ADMINISTRATOR">#subject# New registration at #organization_long_name# website\n#content# A new user has registered on #organization_homepage#.\n\nLast name: #user_last_name#\nFirst Name: #user_first_name#\nE-Mail: #user_email#\n\n\nThis message was generated automatically.</string>
   <string name="SYS_SYSTEM">System</string>
   <string name="SYS_SYSTEM_DEFAULT_LIST">System-wide default list</string>
   <string name="SYS_SYSTEM_MAILS">System notifications</string>
@@ -1369,8 +1369,8 @@
   <string name="SYS_USER_RELATION">Relationship</string>
   <string name="SYS_USER_RELATIONS">Relationships</string>
   <string name="SYS_USER_RELATION_TYPE">Relationship type</string>
-  <string name="SYS_USERNAME">Username</string>
-  <string name="SYS_USERNAME_OR_EMAIL">Username or E-mail</string>
+  <string name="SYS_USERNAME">Roadname</string>
+  <string name="SYS_USERNAME_OR_EMAIL">Roadname or E-mail</string>
   <string name="SYS_USERNAME_WITH_TIMESTAMP">#VAR1# on #VAR2# at #VAR3#</string>
   <string name="SYS_USERS_FOUND">User found</string>
   <string name="SYS_USING_CURRENT_VERSION">You are using a current #VAR1#version of Admidio!</string>

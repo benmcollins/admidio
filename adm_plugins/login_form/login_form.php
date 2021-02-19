@@ -141,7 +141,8 @@ if($gValidLogin)
     $form->addStaticControl(
         'plg_user', $gL10n->get('SYS_MEMBER'),
         '<a href="'. SecurityUtils::encodeUrl(ADMIDIO_URL. FOLDER_MODULES. '/profile/profile.php', array('user_id' => (int) $gCurrentUser->getValue('usr_id'))). '" target="'. $plg_link_target. '" title="'.$gL10n->get('SYS_SHOW_PROFILE').'">'
-        . $gCurrentUser->getValue('FIRST_NAME') . ' ' . $gCurrentUser->getValue('LAST_NAME') .
+        . $gCurrentUser->getValue('FIRST_NAME') . ' ' . $gCurrentUser->getValue('LAST_NAME')
+        . ' (' . $gCurrentUser->getValue('usr_login_name') . ')'.
         '</a>'
     );
     $form->addStaticControl('plg_active_since', $gL10n->get('PLG_LOGIN_ACTIVE_SINCE'), $gCurrentSession->getValue('ses_begin', $gSettingsManager->getString('system_time')));
